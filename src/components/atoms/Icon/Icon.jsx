@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
+
 import * as icons from '../../../assets';
+import { iconProps } from "./utils";
 
 const Icon = ({ name }) => {
     const src = icons[`${name}Icon`];
@@ -7,28 +9,9 @@ const Icon = ({ name }) => {
     return <img alt={name + ' Icon'} src={src} />
 }
 
+
 Icon.propTypes = {
-    name: PropTypes.oneOf([
-        'DS',
-        'Ayden',
-        'Amex',
-        'ApplePay',
-        'BrainTree',
-        'DirectDebit',
-        'Discovery',
-        'GoCardless',
-        'GooglePay',
-        'Jcb',
-        'Klarna',
-        'Mastercard',
-        'PaymentCard',
-        'Paypal',
-        'Primer',
-        'Ravelin',
-        'Sift',
-        'Stripe',
-        'Visa'
-    ])
+    name: PropTypes.oneOf(iconProps)
 }
 
 export default Icon

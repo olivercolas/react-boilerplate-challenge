@@ -1,22 +1,15 @@
-import {Link} from "react-router-dom";
-
-const navlist = [
-    {
-        path: '/',
-        text: 'home'
-    },
-    {
-        path: '/login',
-        text: 'login'
-    }
-]
+import AppLink from "../AppLink";
+import { navlist } from "./constants";
+import Box from "../../atoms/Box";
 
 const Navbar = () => {
     return (
         <header>
-            {navlist.map(({path, text}) => (
-                <Link key={text} to={path}>{text}</Link>
-            ))}
+            <Box row space="2" gap="1">
+                {navlist.map(({path, text}) => (
+                    <AppLink key={text} to={path}>{text}</AppLink>
+                ))}
+            </Box>
         </header>
     )
 }
