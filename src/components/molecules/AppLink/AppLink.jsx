@@ -3,7 +3,7 @@ import Typography from "../../atoms/Typography";
 
 const AppLink = ({children, to}) => {
     return (
-        <Link to={to}>
+        <Link to={to} style={{flexShrink: 0}}>
             <Typography as="span">{children}</Typography>
         </Link>
     )

@@ -1,0 +1,21 @@
+{
+  "translation": {
+    "nav": [
+      {
+        "path": "/",
+        "text": "accueil"
+      },
+      {
+        "path": "/about",
+        "text": "a propos"
+      },
+      {
+        "path": "/login",
+        "text": "se connecter"
+      }
+    ],
+    "home": {
+      "title": "Boilerplate pour le Challenge de Primer en React"
+    }
+  }
+}

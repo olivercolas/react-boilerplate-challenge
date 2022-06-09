@@ -1,11 +1,14 @@
 import Logo from "../../components/atoms/Logo";
 import { HomeWrapper } from "./Home.styles";
+import {useTranslation} from "react-i18next";
 
 const Home = () => {
+    const { t } = useTranslation()
+
     return (
         <HomeWrapper>
             <Logo />
-            <p>Primer React Challenge Boilerplate</p>
+            <p>{ t('home.title') }</p>
         </HomeWrapper>
     )
 }

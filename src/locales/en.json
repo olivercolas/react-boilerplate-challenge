@@ -1,0 +1,21 @@
+{
+  "translation": {
+    "nav": [
+      {
+        "path": "/",
+        "text": "home"
+      },
+      {
+        "path": "/about",
+        "text": "about"
+      },
+      {
+        "path": "/login",
+        "text": "login"
+      }
+    ],
+    "home": {
+      "title": "Primer React Challenge Boilerplate"
+    }
+  }
+}
