@@ -1,10 +1,10 @@
 import { Outlet } from 'react-router-dom'
-import Navbar from "../../components/molecules/NavBar";
+import DefaultNavbar from "../../components/molecules/NavBars/DefaultNavBar";
 
 const MainLayout = () => {
     return (
         <>
-            <Navbar />
+            <DefaultNavbar />
 
             <main>
                 <Outlet />

@@ -16,6 +16,15 @@
     ],
     "home": {
       "title": "Primer React Challenge Boilerplate"
+    },
+    "about": {
+      "title": "About Page"
+    },
+    "notFound": {
+      "title": "Page not found!"
+    },
+    "login": {
+      "title": "Login page"
     }
   }
 }

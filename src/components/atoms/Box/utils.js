@@ -12,3 +12,5 @@ export const getPaddingFromArrayOfSpaces = (spaces) => {
         return padding
     })
 }
+
+export const flexAlignmentProps = ['center', 'end', 'start', 'space-between']

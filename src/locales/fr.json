@@ -16,6 +16,15 @@
     ],
     "home": {
       "title": "Boilerplate pour le Challenge de Primer en React"
+    },
+    "about": {
+      "title": "A propos"
+    },
+    "notFound": {
+      "title": "Pas de page ici!"
+    },
+    "login": {
+      "title": "Page de connexion"
     }
   }
 }

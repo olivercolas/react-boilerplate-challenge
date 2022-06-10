@@ -7,6 +7,7 @@ import Home from "./screens/home";
 import Login from "./screens/login";
 import NotFound from "./screens/not-found";
 import About from "./screens/about";
+import LoginLayout from "./layouts/MainLayout/LoginLayout";
 
 const AppRoutes = () => (
     <Routes>
@@ -14,7 +15,11 @@ const AppRoutes = () => (
             <Route path="/" element={<Home />} />
             <Route path="about" element={<About />} />
         </Route>
-        <Route path="login" element={<Login />} />
+
+        <Route element={<LoginLayout />}>
+            <Route path="login" element={<Login />} />
+        </Route>
+
         <Route path="*" element={<NotFound />} />
     </Routes>
 )
