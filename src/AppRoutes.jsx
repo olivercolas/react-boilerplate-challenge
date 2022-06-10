@@ -7,7 +7,7 @@ import Home from "./screens/home";
 import Login from "./screens/login";
 import NotFound from "./screens/not-found";
 import About from "./screens/about";
-import LoginLayout from "./layouts/MainLayout/LoginLayout";
+import LoginLayout from "./layouts/LoginLayout";
 
 const AppRoutes = () => (
     <Routes>
