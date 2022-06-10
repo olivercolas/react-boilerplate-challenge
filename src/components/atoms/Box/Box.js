@@ -18,6 +18,8 @@ const Box = styled.div`
   `}
   
   ${props => {
+      if(!props.space) return;
+      
       if(isArray(props.space)) {
           return css`
             padding: ${getPaddingFromArrayOfSpaces(props.space)};
@@ -41,6 +43,8 @@ const Box = styled.div`
 
 Box.propTypes = {
     space: function(props, propName) {
+        if(!props.space) return null
+
         if(isArray(props.space)) {
             const isValidSpaceArray = props.space.length <= 4 && props.space.every((space => Number.isInteger(space)))
 
@@ -48,14 +52,12 @@ Box.propTypes = {
                 return new Error(`If ${propName} is an array, it must be an array of up to 4 numbers`);
             }
         } else {
-            const isValidSpaceValue = props.space.indexOf(Object.keys(props.space))
+            const isValidSpaceValue = Object.keys(spacing).includes(props.space)
 
             if(!isValidSpaceValue) {
-                return new Error(`If ${propName} is a string, it must be one of ${Object.keys(props.space).join(' ')}`);
+                return new Error(`If ${propName} is a string, it must be one of ${Object.keys(spacing).join(' ')}`);
             }
         }
-
-        return null
     },
     gap: PropTypes.oneOf(Object.keys(spacing)),
     direction: PropTypes.oneOf(['row', 'column']),
@@ -64,7 +66,7 @@ Box.propTypes = {
 }
 
 Box.defaultProps = {
-    direction: 'row'
+    direction: 'row',
 }
 
 export default Box
