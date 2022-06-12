@@ -4,7 +4,7 @@ import Spacer from "../../../atoms/Spacer/Spacer";
 
 const LoginNavBar = () => {
     return (
-        <Box row space="2" gap="1">
+        <Box row space="4" gap="3">
             <Spacer />
             <LanguageSelect />
         </Box>

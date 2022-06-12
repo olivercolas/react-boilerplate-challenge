@@ -11,7 +11,7 @@ const DefaultNavbar = () => {
 
     return (
         <nav>
-            <Box row space="2" gap="1">
+            <Box direction="row" space="4" gap="3">
                 {navList.map(({path, text}) => (
                     <AppLink key={text} to={path}>{text}</AppLink>
                 ))}

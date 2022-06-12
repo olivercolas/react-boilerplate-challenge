@@ -1,10 +1,12 @@
 import {convertObjValuesToPixels, convertObjValuesToStyledCss} from "./convert";
 
 export const spacing = {
-    1: 12,
-    2: 24,
-    3: 36,
-    4: 48,
+    1: 4,
+    2: 8,
+    3: 12,
+    4: 24,
+    5: 36,
+    6: 48,
 }
 
 export const spacingInPixels = convertObjValuesToPixels(spacing)

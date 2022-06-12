@@ -3,7 +3,7 @@ import {convertObjValuesToPixels, convertObjValuesToStyledCss} from "./convert";
 export const fontSize = {
     heading: 48,
     subheading: 24,
-    paragraph: 16,
+    paragraph: 14,
 }
 
 export const fontSizeInPixels = convertObjValuesToPixels(fontSize)

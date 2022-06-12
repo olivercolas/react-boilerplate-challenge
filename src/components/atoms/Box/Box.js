@@ -3,7 +3,8 @@ import isArray from "lodash/isArray";
 import PropTypes from "prop-types";
 
 import {spacing, spacingInPixels, paddingInStyledCSS} from "../../../utils/sizes/spacing";
-import {flexAlignmentProps, getPaddingFromArrayOfSpaces} from "./utils";
+import {getPaddingFromArrayOfSpaces} from "./utils";
+import {directionChoices, flexAlignmentChoices} from "../../../utils/props";
 
 const Box = styled.div`
   display: flex;
@@ -60,9 +61,9 @@ Box.propTypes = {
         }
     },
     gap: PropTypes.oneOf(Object.keys(spacing)),
-    direction: PropTypes.oneOf(['row', 'column']),
-    align: PropTypes.oneOf(flexAlignmentProps),
-    justify: PropTypes.oneOf(flexAlignmentProps)
+    direction: PropTypes.oneOf(directionChoices),
+    align: PropTypes.oneOf(flexAlignmentChoices),
+    justify: PropTypes.oneOf(flexAlignmentChoices)
 }
 
 Box.defaultProps = {

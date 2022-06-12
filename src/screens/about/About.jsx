@@ -6,7 +6,7 @@ const About = () => {
     const { t } = useTranslation()
 
     return (
-        <Box row space={[0, 2, 2, 2]}>
+        <Box row space={[0, 4, 4, 4]}>
             <div>{ t('about.title') }</div>
         </Box>
     )
